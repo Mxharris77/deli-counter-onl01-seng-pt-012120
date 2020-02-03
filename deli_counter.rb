@@ -5,13 +5,13 @@ another_deli = ["Amanda", "Annette", "Ruchi", "Jason", "Logan", "Spencer", "Avi"
 
 def line(array)
     if array.length >= 1
-    new_array = []
+    new_person = []
     counter = 1 
     array.each do |name|
-      new_array.push("#{counter}. #{name}")
+      new_person.push("#{counter}. #{name}")
       counter += 1 
     end 
-    puts "The line is currently: #{new_array.join(" ")}"
+    puts "The line is currently: #{new_person.join(" ")}"
   else
     puts "The line is currently empty."
   end
@@ -22,7 +22,9 @@ def take_a_number(line, new_person)
   puts "Welcome, #{new_person}. You are number #{line.length} in line."
 end
 
-def now_serving()
+def now_serving(line)
+  if line.length == 0 
+    puts "There is no "
   
 
 
