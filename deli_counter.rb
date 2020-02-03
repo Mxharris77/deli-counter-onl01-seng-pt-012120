@@ -5,13 +5,13 @@ another_deli = ["Amanda", "Annette", "Ruchi", "Jason", "Logan", "Spencer", "Avi"
 
 def line(array)
     if array.length >= 1
-    new_person = []
+    person = []
     counter = 1 
     array.each do |name|
-      new_person.push("#{counter}. #{name}")
+      person.push("#{counter}. #{name}")
       counter += 1 
     end 
-    puts "The line is currently: #{new_person.join(" ")}"
+    puts "The line is currently: #{person.join(" ")}"
   else
     puts "The line is currently empty."
   end
@@ -30,6 +30,7 @@ def now_serving(line)
     line.shift
     
   end
+end
   
 
 
