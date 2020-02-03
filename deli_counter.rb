@@ -23,4 +23,4 @@ def take_a_number(line, new_person)
 end
   
 
-line(katz_deli)
+
