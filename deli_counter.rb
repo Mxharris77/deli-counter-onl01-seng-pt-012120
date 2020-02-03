@@ -24,7 +24,8 @@ end
 
 def now_serving(line)
   if line.length == 0 
-    puts "There is no "
+    puts "There is nobody in line"
+  elseif 
   
 
 
